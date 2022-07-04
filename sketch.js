@@ -213,9 +213,9 @@ function setup() {
 function draw() {
   background(255)
   strokeWeight(2)
-  stroke(220, 220, 220)
+  stroke(120, 120, 120)
   linea_montana.draw()
-  stroke(255, 255, 255)
+  stroke(20, 20, 20)
   strokeWeight(4)
   linea_montana_2.draw()
   // bezierObject.draw()
