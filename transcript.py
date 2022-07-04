@@ -10,11 +10,11 @@ with open('coordinates.txt') as my_file:
     i = 0 
     for coord in coordenadas_array:
         coordenada = coordenadas_array[i][:-3]
-        primer_valor = coordenada.split(",",1)[0][1:].split(".",1)[0]
-        coordenadas_x.append(int(primer_valor)*2.5)
+        primer_valor = coordenada.split(",",1)[0][1:].split(".",1)[0] + "." + coordenada.split(",",1)[0][1:].split(".",1)[1][:2]
+        coordenadas_x.append(round((float(primer_valor)*2.5),2))
         #print(my_string.split("world",1)[1])
-        segundo_valor = coordenada.split(",",1)[1].split(".",1)[0]
-        coordenadas_y.append((int(segundo_valor)-300)*2.5)
+        segundo_valor = coordenada.split(",",1)[1].split(".",1)[0] + "." + coordenada.split(",",1)[1][1:].split(".",1)[1][:2]
+        coordenadas_y.append(round((float(segundo_valor)-300)*2.5, 2))
         coordenadas_limpio.append(coordenada)
         
         i += 1
