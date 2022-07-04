@@ -213,8 +213,10 @@ function setup() {
 function draw() {
   background(255)
   strokeWeight(2)
+  stroke(220, 220, 220)
   linea_montana.draw()
-  strokeWeight(3)
+  stroke(255, 255, 255)
+  strokeWeight(4)
   linea_montana_2.draw()
   // bezierObject.draw()
   primer_random = random(5)
